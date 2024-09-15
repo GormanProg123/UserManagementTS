@@ -1,6 +1,6 @@
 .searchitem{
   transform: translateY(20px);
-  margin-left: 25px;
+  margin-left: 20px;
   display: flex;
   flex-direction: row; 
   gap: 20px;
