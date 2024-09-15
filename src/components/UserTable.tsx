@@ -9,12 +9,9 @@ export const UserTable = (): JSX.Element => {
 
   const filteredUsers = users.filter((user: User) => {
     const searchItem = filters.searchTerm.toLowerCase();
-    return (
-      user.name.toLowerCase().includes(searchItem) ||
-      user.username.toLowerCase().includes(searchItem) ||
-      user.email.toLowerCase().includes(searchItem) ||
-      user.phone.toLowerCase().includes(searchItem)
-    );
+    const field = filters.sortBy;
+
+    return user[field].toLowerCase().includes(searchItem);
   });
 
   const sortedUsers = filteredUsers.sort((a, b) => {
