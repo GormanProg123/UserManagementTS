@@ -14,6 +14,7 @@
   text-align: left;
   border-bottom: 1px solid #ddd; 
   background-color: #fafafa;
+  word-wrap: break-word; 
 }
 
 .maintable th {
@@ -37,4 +38,36 @@
 
 .maintable tr:nth-child(even) {
   background-color: #ffffff; 
+}
+
+@media (max-width: 1023px) { 
+  .maintable {
+    width: 730px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+} 
+
+@media (max-width: 767px) { 
+  .maintable {
+    width: 500px;
+    margin-top: 30px;
+  }
+
+  .maintable th, .maintable td {
+    padding: 5px;
+    font-size: 17.5px;
+  }
+}
+
+@media (max-width: 479px) {
+  .maintable {
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  .maintable th, .maintable td {
+    padding: 5px;
+    font-size: 14px;
+  }
 }
