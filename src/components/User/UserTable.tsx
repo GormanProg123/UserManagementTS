@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
-import { Rootstate } from '../redux/store';
-import { User } from '../types/types'; 
+import { Rootstate } from '../../redux/store';
+import { User } from '../../types/types'; 
 import style from './usertab.module.css';
 
 export const UserTable = (): JSX.Element => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSearchItem, setSortBy } from '../redux/userSlice';
-import { Rootstate } from '../redux/store';
+import { setSearchItem, setSortBy } from '../../redux/Filters/filtersSlice';
+import { Rootstate } from '../../redux/store';
 import style from './searchTab.module.css'
 
 export const SearchFilters = () => {

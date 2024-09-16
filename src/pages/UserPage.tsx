@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import axios from 'axios';
 import { useDispatch, useSelector} from "react-redux";
 import { Rootstate } from "../redux/store";
-import { fetchUsersStart, fetchUsersSuccess, fetchUsersFailure } from "../redux/userSlice";
-import { UserTable } from "../components/UserTable";
-import { SearchFilters } from "../components/SearchFilters";
+import { fetchUsersStart, fetchUsersSuccess, fetchUsersFailure } from "../redux/Users/userSlice";
+import { UserTable } from "../components/User/UserTable";
+import { SearchFilters } from "../components/Search/SearchFilters";
 
 export const UserPage = () => {
   const dispatch = useDispatch();
