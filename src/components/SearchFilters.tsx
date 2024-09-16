@@ -16,6 +16,11 @@ export const SearchFilters = () => {
     dispatch(setSortBy(e.target.value as 'name' | 'username' | 'email' | 'phone')); 
   };
 
+  const handleResetChange = () => {
+    dispatch(setSearchItem('')); 
+    dispatch(setSortBy('name'));
+  }
+
   return (
     <div>
       <div className={style.searchitem}>
@@ -23,7 +28,7 @@ export const SearchFilters = () => {
         type="text"
         value={filters.searchTerm}
         onChange={handleSearchChange}
-        placeholder="Search by name"
+        placeholder="Enter search term"
         className={style.inputitem}
       />
       <select className={style.chooseitem} value={filters.sortBy} onChange={handleSortChange}>
@@ -32,6 +37,8 @@ export const SearchFilters = () => {
         <option value="email">Email</option>
         <option value="phone">Phone</option>
       </select>
+
+      <button onClick={handleResetChange} className={style.resetButton}>Reset</button>
       </div>
     </div>
   );

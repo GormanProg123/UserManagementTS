@@ -31,7 +31,7 @@
 
 .chooseitem {
   width: 180px;
-  height: 44.2px;
+  height: 44px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s, background-color 0.3s;
@@ -52,3 +52,27 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.resetButton{
+  background-color: #6366f1; 
+  color: white;
+  width: 133px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: #4f46e5; 
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.resetButton:focus {
+  outline: none; 
+  border-color: #4338ca; 
+}
+
+.resetButton:active {
+  background-color: #3730a3; 
+  transform: scale(0.98); 
+}
